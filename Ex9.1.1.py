@@ -9,7 +9,7 @@ def are_files_equal(file1, file2):
     :rtype: boolean
     """
     with open(file1, 'r') as first_file:
-        file1_contents = first_file.readline()
+        file1_contents = first_file.read()
     with open(file2, 'r') as second_file:
-        file2_contents = second_file.readline()
+        file2_contents = second_file.read()
     return file1_contents == file2_contents
